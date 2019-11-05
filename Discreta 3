@@ -1,0 +1,9 @@
+n = input("Forneça um numero primo a ser identifado e um numero a ser identificado quantos multiplos dele há no numero primo fornecido: ")
+p = int(n(0))
+m = int(n(1))
+x = 0
+def ord(p, m):
+  while m**x < p:
+    count =+ 1
+    x +=1
+    p//(m**x)
