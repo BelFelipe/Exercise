@@ -1,9 +1,11 @@
-n = input("Forneça um numero primo a ser identifado e um numero a ser identificado quantos multiplos dele há no numero primo fornecido: ")
-p = int(n(0))
-m = int(n(1))
-x = 0
-def ord(p, m):
-  while m**x < p:
-    count =+ 1
-    x +=1
-    p//(m**x)
+print("Forneça um numero natural e um primo, sera retornado a quantidade de fatores do numero primo que podem ser encontrados no fatorial do natural fornecido")  
+n = int(input("Informe o numero natural: "))
+p = int(input("Informe o numero primo: "))
+x = 1
+fatores = []
+while (p**x) < n:
+  fat = n//(p**x)
+  fatores.append(fat)
+  x += 1
+fatores = sum(fatores)
+print(fatores)
