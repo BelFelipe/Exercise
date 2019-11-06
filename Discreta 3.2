@@ -1,1 +1,13 @@
-  
+print("Fornaça um número natural. Será retornado a quantidade de zeros em seu fatorial.")
+n = int(input("informe o número natural: "))
+
+def ORDpn (primo, natural):
+  fatores = []
+  x = 1
+  while (primo**x) < natural:
+    fat = natural//(primo**x)
+    fatores.append(fat)
+    x += 1
+  return sum(fatores)
+
+print(ORDpn(5, n))
