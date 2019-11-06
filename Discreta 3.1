@@ -1,11 +1,12 @@
 print("Forneça um numero natural e um primo, sera retornado a quantidade de fatores do numero primo que podem ser encontrados no fatorial do natural fornecido")  
 n = int(input("Informe o numero natural: "))
 p = int(input("Informe o numero primo: "))
-x = 1
-fatores = []
-while (p**x) < n:
-  fat = n//(p**x)
-  fatores.append(fat)
-  x += 1
-fatores = sum(fatores)
-print(fatores)
+def ORDpn (primo, natural):
+  fatores = []
+  x = 1
+  while (primo**x) < natural:
+    fat = n//(p**x)
+    fatores.append(fat)
+    x += 1
+  return sum(fatores)
+print(ORDpn(p, n))
