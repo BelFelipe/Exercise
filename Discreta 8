@@ -4,7 +4,6 @@ k = int(input("Informe o primeiro numero a ser utilizado: "))
 j = int(input("Informe o segundo numero a ser utilizado: "))
 
 def euclides_estendido(a, b):
-    """return (g, x, y) such that a*x + b*y = g = gcd(a, b)"""
     x0, x1, y0, y1 = 0, 1, 1, 0
     while a != 0:
         q, b, a = b // a, a, b % a
